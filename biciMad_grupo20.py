@@ -141,10 +141,10 @@ def main():
     ################################# 7 ######################################
     #Calculemos qué estaciones son más concurridas como origen del viaje:
     print('estaciones de salida mas concurridas')
-    dff.groupBy('idplug_station').count().sort('count',ascending = False).show()
+    dff.groupBy('idunplug_station').count().sort('count',ascending = False).show()
     #como estacion de llegada
     print('estaciones de llegada mas concurridas')
-    dff.groupBy('idunplug_station').count().sort('count',ascending = False).show()
+    dff.groupBy('idplug_station').count().sort('count',ascending = False).show()
 
 
     ################################# 8 ######################################
